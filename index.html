@@ -8,6 +8,7 @@
   <title>Manage Landing Page</title>
   <link rel="icon" href="img/favicon.png" />
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -38,7 +39,7 @@
   <main>
     <!-- hero section -->
     <section
-      class="container mx-auto flex flex-col-reverse items-center md:flex-row items-center px-10 md:px-20 mt-28 space-y-0 mb-28"
+      class="container mx-auto flex flex-col-reverse md:flex-row items-center  md:px-20 mt-28 space-y-0 mb-28"
       id="hero">
       <!-- first item -->
       <div class="flex flex-col space-y-12 md:w-1/2">
@@ -51,7 +52,7 @@
           while keeping the larger team goals in view
         </p>
         <a href="#"
-          class="px-4 py-2 w-32 text-center bg-brightRed rounded-full text-white  md:self-start hover:bg-brightRedLight">Get
+          class="px-4 py-2 w-32 text-center bg-brightRed rounded-full text-white self-center  md:self-start hover:bg-brightRedLight">Get
           Started</a>
       </div>
       <!-- second item -->
@@ -179,38 +180,62 @@
           </p>
         </div>
       </div>
-      <a href="#" class="px-4 py-2 bg-brightRed rounded-full text-center text-white hover:bg-brightRedLight">Get Started</a>
+      <button href="#" class="px-4 py-2 bg-brightRed rounded-full text-center text-white hover:bg-brightRedLight">Get Started</button>
     </section>
 
     <section
-      class="bg-brightRed py-16 mx-auto md:px-20 space-y-10 items-center flex flex-col md:flex-row md:justify-between">
-      <h3 class="text-2xl text-white font-bold">
-        Simplify how your team <br />works today.
-      </h3>
-      <a href="#"
-        class="px-4 py-2 w-32 bg-white rounded-full text-brightRed hover:bg-brightRedLight text-center hover:text-white">Get
-        Started</a>
+      class="bg-brightRed ">
+      <div class="py-16 container mx-auto  space-y-10  flex flex-col md:items-center md:flex-row md:justify-between px-10 md:px-20">
+        <h3 class="text-3xl max-w-sm font-bold md:text-center text-white">
+          Simplify how your team works today.
+        </h3>
+        <a href="#"
+          class="px-4 py-2 w-32 bg-white rounded-full text-brightRed hover:bg-brightRedLight text-center hover:text-white">Get
+          Started</a>
+      </div>
+     
     </section>
   </main>
-  <footer class="bg-veryDarkBlue">
-    <div class="container mx-auto">
-      <div>
-        <img src="img/logo.svg" alt="logo" />
-      </div>
 
+  <footer class="bg-veryDarkBlue ">
+    <div class="py-16 mx-auto  container flex justify-between px-10 md:px-20">
+
+    <div class="">
+      <img src="img/logo.svg" alt="logo" />
+      <div class="icons">
+        <i style="font-size:24px" class="fa text-darkGrayishBlue">&#xf082;</i>
+        <i style="font-size:24px" class="fa">&#xf16d;</i>
+      </div>
+    </div>
+
+    <div class="flex">
       <div class="hidden md:flex flex-col space-y-1">
+        <a href="#" class="text-darkGrayishBlue">Home</a>
         <a href="#" class="text-darkGrayishBlue">Pricing</a>
         <a href="#" class="text-darkGrayishBlue">Product</a>
         <a href="#" class="text-darkGrayishBlue">About us</a>
       </div>
 
-      <div class="hidden md:flex flex-col space-y-1">
+      <div class="hidden md:flex flex-col space-y-1 ml-16">
         <a href="#" class="text-darkGrayishBlue">Careers</a>
         <a href="#" class="text-darkGrayishBlue">Community</a>
         <a href="#" class="text-darkGrayishBlue">Privacy Policy</a>
       </div>
+
     </div>
-  </footer>
+
+    <div class="flex flex-col justify-between">
+      <div class="flex space-x-6">
+        <input type="email" placeholder="Updates in your inbox..." class="rounded-full px-4 py-2 border-none outline-none"/>
+        <button href="#" class="px-4 py-2 bg-brightRed rounded-full text-center text-white hover:bg-brightRedLight">GO</button>
+      </div>
+
+      <small class="text-darkGrayishBlue self-center ">Copyright 2023, All Rights Reserved</small>
+    </div>
+
+  </div>
+   
+</footer>
 </body>
 
 </html>
