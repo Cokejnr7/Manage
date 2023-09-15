@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manage Landing Page</title>
+  <link rel="icon" href="img/favicon.png" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <!--  navbar  -->
+  <nav class="container px-10 md:px-20 py-6 mx-auto">
+    <!-- wrapper -->
+    <div class="flex items-center justify-between px-6">
+      <!-- logo -->
+      <div>
+        <img src="img/logo.svg" alt="logo" />
+      </div>
+
+      <!-- nav-links -->
+      <div class="hidden lg:flex space-x-6">
+        <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+        <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+        <a href="#" class="hover:text-darkGrayishBlue">About us</a>
+        <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+        <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+      </div>
+
+      <div class="hidden lg:block">
+        <a href="#" class="px-4 py-2 bg-brightRed rounded-full text-white hover:bg-brightRedLight">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- hero section -->
+    <section
+      class="container mx-auto flex flex-col-reverse items-center md:flex-row items-center px-10 md:px-20 mt-28 space-y-0 mb-28"
+      id="hero">
+      <!-- first item -->
+      <div class="flex flex-col space-y-12 md:w-1/2">
+        <h1 class="max-w-md font-bold text-center md:text-left text-5xl">
+          Bring everyone together to build better products
+        </h1>
+
+        <p class="max-w-md text-center text-darkGrayishBlue md:text-left md:max-w-xs">
+          manage makes it simple for software teams to plan data-to-day tasks
+          while keeping the larger team goals in view
+        </p>
+        <a href="#"
+          class="px-4 py-2 w-32 text-center bg-brightRed rounded-full text-white  md:self-start hover:bg-brightRedLight">Get
+          Started</a>
+      </div>
+      <!-- second item -->
+      <div>
+        <img src="img/illustration-intro.svg" alt="illustration" />
+      </div>
+    </section>
+
+    <!-- features -->
+    <section id="features"
+      class="container mx-auto flex flex-col space-y-12 md:flex-row md:space-y-0 mb-28 px-10 md:px-20">
+      <div class="flex flex-col space-y-12 md:w-1/2">
+        <h2 class="text-4xl max-w-sm font-bold text-center md:text-left">
+          What's different about Manage?
+        </h2>
+        <p class="text-center text-darkGrayishBlue md:text-left">
+          manage provides all the functionality your<br />
+          team needs, without complexity. Our <br />
+          software is tailor-made for modern digital<br />
+          product teams.
+        </p>
+      </div>
+
+      <!-- numbered list -->
+      <div class="flex flex-col space-y-12 md:w-1/2">
+        <div class="flex flex-col space-y-6 md:flex-row md:space-y-0">
+          <span class="rounded-full bg-brightRedLight py-2 md:py-0 md:bg-white">
+            <h2 class="inline rounded-full p-2 px-6 text-white mr-10 font-bold bg-brightRed">
+              01
+            </h2>
+            <h3 class="inline font-bold md:hidden">
+              Track company-wide progress
+            </h3>
+          </span>
+          <div class="flex flex-col space-y-2">
+            <h3 class="font-bold text-lg hidden md:block">
+              Track company-wide progress
+            </h3>
+            <p class="text-darkGrayishBlue text-left md:max-w-md">
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest details. Never lose sight of the bigger picture again.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col space-y-6 md:flex-row md:space-y-0">
+          <span class="rounded-full bg-brightRedLight py-2 md:py-0 md:bg-white">
+            <h2 class="inline rounded-full p-2 px-6 text-white mr-10 font-bold bg-brightRed">
+              02
+            </h2>
+            <h3 class="inline font-bold md:hidden">
+              Advanced built-in reports
+            </h3>
+          </span>
+          <div class="flex flex-col space-y-2">
+            <h3 class="font-bold text-lg hidden md:block">
+              Advanced built-in reports
+            </h3>
+            <p class="text-darkGrayishBlue text-left md:max-w-md">
+              Set internal delivery estimates and track progress toward
+              company goals. Our customisable dashboard helps you build out
+              the reports you need to keep key stakeholders informed.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col space-y-6 md:flex-row md:space-y-0">
+          <span class="rounded-full bg-brightRedLight py-2 md:py-0 md:bg-white">
+            <h2 class="inline rounded-full p-2 px-6 text-white mr-10 font-bold bg-brightRed">
+              03
+            </h2>
+            <h3 class="inline font-bold md:hidden">
+              Everything you need in one place
+            </h3>
+          </span>
+          <div class="flex flex-col space-y-2">
+            <h3 class="font-bold text-lg hidden md:block">
+              Everything you need in one place
+            </h3>
+            <p class="text-darkGrayishBlue text-left md:max-w-md">
+              Stop jumping from one service to another to communicate, store
+              files, track tasks and share documents. Manage offers an
+              all-in-one team productivity solution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col space-y-12 items-center mb-28">
+      <h2 class="text-3xl font-bold text-center">What they've said</h2>
+
+      <div class="flex space-x-12 justify-center">
+        <div
+          class="p-4 flex-col space-y-2 justify-center bg-veryLightGray w-4/12 rounded-lg relative flex items-center">
+          <img src="img/avatar-anisha.png" class="w-16 absolute -top-8" />
+          <p class="font-bold text-center">Anisha Li</p>
+          <p class="max-w-xs text-center text-darkGrayishBlue md:max-w-xs">
+            "we have been able to cancel so many other subcriptions since
+            using Mange. thers is no more cross-channel confudion and everyone
+            is much more focused."
+          </p>
+        </div>
+
+        <div
+          class="p-4 flex-col space-y-2 justify-center bg-veryLightGray w-8/12 rounded-lg relative flex items-center">
+          <img src="img/avatar-anisha.png" class="w-16 absolute -top-8" />
+          <p class="font-bold text-center">Anisha Li</p>
+          <p class="max-w-xs text-center text-darkGrayishBlue md:max-w-xs">
+            "we have been able to cancel so many other subcriptions since
+            using Mange. thers is no more cross-channel confudion and everyone
+            is much more focused."
+          </p>
+        </div>
+
+        <div
+          class="p-4 flex-col justify-center space-y-2 bg-veryLightGray w-8/12 rounded-lg relative flex items-center">
+          <img src="img/avatar-anisha.png" class="w-16 absolute -top-8" />
+          <p class="font-bold text-center">Anisha Li</p>
+          <p class="max-w-xs text-center text-darkGrayishBlue md:max-w-xs">
+            "we have been able to cancel so many other subcriptions since
+            using Mange. thers is no more cross-channel confudion and everyone
+            is much more focused."
+          </p>
+        </div>
+      </div>
+      <a href="#" class="px-4 py-2 bg-brightRed rounded-full text-center text-white hover:bg-brightRedLight">Get Started</a>
+    </section>
+
+    <section
+      class="bg-brightRed py-16 mx-auto md:px-20 space-y-10 items-center flex flex-col md:flex-row md:justify-between">
+      <h3 class="text-2xl text-white font-bold">
+        Simplify how your team <br />works today.
+      </h3>
+      <a href="#"
+        class="px-4 py-2 w-32 bg-white rounded-full text-brightRed hover:bg-brightRedLight text-center hover:text-white">Get
+        Started</a>
+    </section>
+  </main>
+  <footer class="bg-veryDarkBlue">
+    <div class="container mx-auto">
+      <div>
+        <img src="img/logo.svg" alt="logo" />
+      </div>
+
+      <div class="hidden md:flex flex-col space-y-1">
+        <a href="#" class="text-darkGrayishBlue">Pricing</a>
+        <a href="#" class="text-darkGrayishBlue">Product</a>
+        <a href="#" class="text-darkGrayishBlue">About us</a>
+      </div>
+
+      <div class="hidden md:flex flex-col space-y-1">
+        <a href="#" class="text-darkGrayishBlue">Careers</a>
+        <a href="#" class="text-darkGrayishBlue">Community</a>
+        <a href="#" class="text-darkGrayishBlue">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
