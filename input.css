@@ -21,6 +21,8 @@
       background-position: 300%;
     }
 
+    
+
     @media (max-width:576px){
       body{
         background-image: url("../img/bg-tablet-pattern.svg"),url("../img/bg-tablet-pattern.svg");
@@ -29,5 +31,46 @@
         background-position: 50px -50px, 300px 420px;
       }
     }
+
+    .hamburger{
+      width: 24px;
+      height: 24px;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.25s;
+      overflow: hidden;
+    }
+
+    .top-bar,.bottom-bar,.middle-bar{
+      position: absolute;
+      background-color: black;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      top: 0;
+    }
+
+    .middle-bar{
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .bottom-bar{
+      transform: translateY(-89%);
+    }
+
+
+    .open .middle-bar{
+      transform: translateX(-100px);
+    }
+
+    .open .bottom-bar{
+      transform: rotate(-45deg);
+    }
+
+    .open .top-bar{
+      transform: rotate(45deg);
+    }
+
 
   }
