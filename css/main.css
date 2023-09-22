@@ -701,12 +701,20 @@ body{
   display: none;
 }
 
+.h-2 {
+  height: 0.5rem;
+}
+
 .w-32 {
   width: 8rem;
 }
 
 .w-16 {
   width: 4rem;
+}
+
+.w-2 {
+  width: 0.5rem;
 }
 
 .w-1\/2 {
@@ -775,9 +783,18 @@ body{
   row-gap: 6rem;
 }
 
+.gap-y-5 {
+  row-gap: 1.25rem;
+}
+
 .gap-x-12 {
   -moz-column-gap: 3rem;
        column-gap: 3rem;
+}
+
+.gap-x-1 {
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
 }
 
 .gap-y-12 {
@@ -861,8 +878,17 @@ body{
   border-radius: 0.5rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-none {
   border-style: none;
+}
+
+.border-brightRed {
+  --tw-border-opacity: 1;
+  border-color: hsl(12 88% 59% / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -895,8 +921,8 @@ body{
   background-color: hsl(227 12% 61% / var(--tw-bg-opacity));
 }
 
-.p-6 {
-  padding: 1.5rem;
+.p-10 {
+  padding: 2.5rem;
 }
 
 .py-6 {
@@ -982,14 +1008,14 @@ body{
   line-height: 1.25;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-darkBlue {
   --tw-text-opacity: 1;
   color: hsl(228 39% 23% / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-darkGrayishBlue {
@@ -1140,11 +1166,6 @@ body{
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
-  .md\:px-14 {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-  }
-
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -1153,16 +1174,6 @@ body{
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-
-  .md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
-  .md\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
 
   .md\:text-left {
@@ -1187,21 +1198,6 @@ body{
 
   .lg\:max-w-xs {
     max-width: 20rem;
-  }
-
-  .lg\:gap-x-8 {
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
-  }
-
-  .lg\:gap-x-10 {
-    -moz-column-gap: 2.5rem;
-         column-gap: 2.5rem;
-  }
-
-  .lg\:gap-x-1 {
-    -moz-column-gap: 0.25rem;
-         column-gap: 0.25rem;
   }
 
   .lg\:gap-x-9 {
