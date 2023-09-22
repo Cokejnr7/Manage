@@ -90,6 +90,18 @@
     .no-scrollbar{
       -ms-overflow-style: none;
       scrollbar-width: none;
+      position: relative;
+  }
+
+  .no-scrollbar>div{
+    animation: infinitescrolling 35s ease-in ;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+  }
+
+  @keyframes infinitescrolling {
+    from { transform: translateX(-80%);}
+    to { transform: translateX(160%);}
   }
 
 

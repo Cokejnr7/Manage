@@ -490,6 +490,36 @@ body{
 .no-scrollbar{
   -ms-overflow-style: none;
   scrollbar-width: none;
+  position: relative;
+}
+
+.no-scrollbar>div{
+  -webkit-animation: infinitescrolling 35s ease-in ;
+          animation: infinitescrolling 35s ease-in ;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes infinitescrolling {
+  from {
+    transform: translateX(-80%);
+  }
+
+  to {
+    transform: translateX(160%);
+  }
+}
+
+@keyframes infinitescrolling {
+  from {
+    transform: translateX(-80%);
+  }
+
+  to {
+    transform: translateX(160%);
+  }
 }
 
 *, ::before, ::after {
