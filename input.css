@@ -11,6 +11,7 @@
 
     :root{
       --veryDarkBlue: hsl(228, 39%, 23%); 
+      --veryLightGray: hsl(0, 0%, 98%);
     }
 
     body{
@@ -82,26 +83,35 @@
       transform: translateX(40px) rotate(-45deg);
     } 
 
-    .no-scrollbar::-webkit-scrollbar{
-        display: none;
+    .cards{
+      overflow: hidden;
+      white-space: nowrap;
+      cursor: pointer;
     }
 
+    .cards:hover .card-slide{
+      animation-play-state: paused;
+    }
 
-    .no-scrollbar{
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-      position: relative;
-  }
+    .card-slide{
+      display: inline-block;
+      animation: slide 10s linear infinite ;
+    }
 
-  .no-scrollbar>div{
-    animation: infinitescrolling 35s ease-in ;
-    animation-iteration-count: infinite;
-    animation-fill-mode: backwards;
-  }
+    .card{
+      display: inline-block;
+      background-color: var(--veryLightGray);
+      width: 400px;
+      height: 250px;
+      margin-right: 30px;
+      border-radius: 5px;
+    }
 
-  @keyframes infinitescrolling {
-    from { transform: translateX(-80%);}
-    to { transform: translateX(160%);}
+    
+
+  @keyframes slide {
+    from { transform: translateX(0);}
+    to { transform: translateX(-100%);}
   }
 
 
