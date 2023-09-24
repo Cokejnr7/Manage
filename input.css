@@ -5,6 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 @layer base {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
     html {
       font-family: 'Be Vietnam Pro', system-ui, sans-serif;
     }
@@ -12,6 +18,7 @@
     :root{
       --veryDarkBlue: hsl(228, 39%, 23%); 
       --veryLightGray: hsl(0, 0%, 98%);
+      --darkGrayishBlue: hsl(227, 12%, 61%);
     }
 
     body{
@@ -85,8 +92,10 @@
 
     .cards{
       overflow: hidden;
-      white-space: nowrap;
       cursor: pointer;
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 30px;
       padding-top: 50px;
     }
 
@@ -95,23 +104,31 @@
     }
 
     .card-slide{
-      display: inline-block;
-      animation: slide 15s linear infinite ;
+      animation: slide 20s linear infinite ;
+      display: flex;
+      gap: 30px;
     }
 
     .card{
-      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       background-color: var(--veryLightGray);
-      width: 400px;
-      height: 200px;
-      margin-right: 30px;
+      width: 480px;
+      height: 220px;
       border-radius: 5px;
       position: relative;
-      padding: 0px 60px;
+      gap: 15px;
+      /* padding: 0 80px; */
+    }
+
+    .card p{
+      color: var(--darkGrayishBlue);
+      max-width: 420px;
     }
 
     .card p,.card h3{
-      white-space: wrap;
       text-align: center;
     }
 
