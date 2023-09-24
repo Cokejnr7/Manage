@@ -506,8 +506,8 @@ body{
 }
 
 .card-slide{
-  -webkit-animation: slide 20s linear infinite ;
-          animation: slide 20s linear infinite ;
+  -webkit-animation: slide 15s ease-in-out infinite ;
+          animation: slide 15s ease-in-out infinite ;
   display: flex;
   gap: 30px;
 }
@@ -520,7 +520,7 @@ body{
   background-color: var(--veryLightGray);
   width: 480px;
   height: 220px;
-  border-radius: 5px;
+  border-radius: 3px;
   position: relative;
   gap: 15px;
   /* padding: 0 80px; */
@@ -560,6 +560,22 @@ body{
   to {
     transform: translateX(-100%);
   }
+}
+
+.mobile-card {
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.mobile-card p{
+  text-align: center;
+}
+
+.mobile-card img{
+  left: 50%;
+  transform: translateX(-50%);
+  top: -30px;
 }
 
 *, ::before, ::after {
@@ -735,6 +751,10 @@ body{
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .right-6 {
   right: 1.5rem;
 }
@@ -772,6 +792,10 @@ body{
   display: none;
 }
 
+.h-3 {
+  height: 0.75rem;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -780,12 +804,20 @@ body{
   width: 4rem;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
 
 .w-6 {
   width: 1.5rem;
+}
+
+.min-w-\[80\%\] {
+  min-width: 80%;
 }
 
 .max-w-sm {
@@ -838,17 +870,21 @@ body{
   row-gap: 4rem;
 }
 
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
 .gap-y-12 {
   row-gap: 3rem;
 }
 
 .gap-y-10 {
   row-gap: 2.5rem;
-}
-
-.gap-x-2 {
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
 }
 
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
@@ -915,8 +951,17 @@ body{
   border-radius: 9999px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-none {
   border-style: none;
+}
+
+.border-brightRed {
+  --tw-border-opacity: 1;
+  border-color: hsl(12 88% 59% / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -932,6 +977,11 @@ body{
 .bg-brightRedLight {
   --tw-bg-opacity: 1;
   background-color: hsl(13 100% 96% / var(--tw-bg-opacity));
+}
+
+.bg-veryLightGray {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 98% / var(--tw-bg-opacity));
 }
 
 .bg-veryDarkBlue {
@@ -967,6 +1017,11 @@ body{
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .py-16 {

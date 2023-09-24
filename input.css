@@ -104,7 +104,7 @@
     }
 
     .card-slide{
-      animation: slide 20s linear infinite ;
+      animation: slide 15s ease-in-out infinite ;
       display: flex;
       gap: 30px;
     }
@@ -117,7 +117,7 @@
       background-color: var(--veryLightGray);
       width: 480px;
       height: 220px;
-      border-radius: 5px;
+      border-radius: 3px;
       position: relative;
       gap: 15px;
       /* padding: 0 80px; */
@@ -146,6 +146,23 @@
   @keyframes slide {
     from { transform: translateX(0);}
     to { transform: translateX(-100%);}
+  }
+
+  .mobile-card {
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .mobile-card p{
+    text-align: center;
+  }
+
+  .mobile-card img{
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+
   }
 
 
