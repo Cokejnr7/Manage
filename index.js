@@ -3,6 +3,8 @@ const menu = document.querySelector("#menu");
 const newsLetter = document.querySelector("#news-letter");
 const form = document.querySelector(".form");
 const errorParagraph = document.querySelector(".error");
+const navigators = document.querySelectorAll(".navigators div");
+const mobileCard = document.querySelector(".mobile-card");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("open");
@@ -53,3 +55,25 @@ const data = [
             It keeps the whole team in-sync without being intrusive.”`,
   },
 ];
+
+let currentIndex = 0;
+const brightRed = "hsl(12, 88%, 59%)";
+
+function changeBackgroundColor() {
+  navigators[currentIndex].style.backgroundColor = brightRed;
+  mobileCard.children[0].setAttribute("src", data[currentIndex].imageSrc);
+  if (currentIndex < data.length - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
+  }
+
+  setTimeout(() => {
+    navigators.forEach((navigator) => {
+      navigator.style.backgroundColor = "white";
+    });
+    changeBackgroundColor();
+  }, 5000);
+}
+
+changeBackgroundColor();
