@@ -59,21 +59,24 @@ const data = [
 let currentIndex = 0;
 const brightRed = "hsl(12, 88%, 59%)";
 
+navigators[currentIndex].style.backgroundColor = brightRed;
+
 function changeBackgroundColor() {
-  navigators[currentIndex].style.backgroundColor = brightRed;
-  mobileCard.children[0].setAttribute("src", data[currentIndex].imageSrc);
   if (currentIndex < data.length - 1) {
     currentIndex++;
   } else {
     currentIndex = 0;
   }
 
-  setTimeout(() => {
-    navigators.forEach((navigator) => {
-      navigator.style.backgroundColor = "white";
-    });
-    changeBackgroundColor();
-  }, 5000);
+  navigators[currentIndex].style.backgroundColor = brightRed;
+  mobileCard.children[0].setAttribute("src", data[currentIndex].imageSrc);
+  mobileCard.children[1].textContent = data[currentIndex].name;
+  mobileCard.children[2].textContent = data[currentIndex].text;
 }
 
-changeBackgroundColor();
+setInterval(() => {
+  navigators.forEach((navigator) => {
+    navigator.style.backgroundColor = "white";
+  });
+  changeBackgroundColor();
+}, 5000);
